@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact &amp; Booking — Hotel Sriram</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="index.html" class="logo"><span class="mark">&#9670;</span> Hotel Sriram</a>
+    <nav class="navlinks">
+      <a href="index.html" data-nav>Home</a>
+      <a href="rooms.html" data-nav>Rooms</a>
+      <a href="banquet.html" data-nav>Banquet Halls</a>
+      <a href="gallery.html" data-nav>Gallery</a>
+      <a href="about.html" data-nav>About</a>
+      <a href="contact.html" data-nav>Contact</a>
+      <div class="cta-dropdown" onclick="toggleCtaMenu(event)">
+        <span class="cta">Book now &#9662;</span>
+        <div class="cta-menu">
+          <a href="contact.html#room-request"><span class="m-name">Book a room</span><span class="m-sub">Standard, executive, deluxe or suite</span></a>
+          <a href="banquet.html#hall-enquiry"><span class="m-name">Book banquet hall</span><span class="m-sub">Check a date and get a cost estimate</span></a>
+        </div>
+      </div>
+    </nav>
+    <button class="navtoggle" onclick="toggleNav()">&#9776;</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+    <h1>Contact &amp; booking</h1>
+    <p>Call, WhatsApp, or send a request below — our front desk confirms every booking personally.</p>
+  </div>
+</section>
+
+<section id="room-request">
+  <div class="wrap" style="display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:start;">
+    <div>
+      <span class="eyebrow">Room booking</span>
+      <h2 style="font-size:30px; margin-bottom:18px;">We usually respond within 30 minutes</h2>
+      <p style="color:var(--muted); margin-bottom:28px;">No payment needed online — fill in your details and our front desk will call or message you on WhatsApp to confirm your room and rate.</p>
+
+      <div style="display:flex; flex-direction:column; gap:18px;">
+        <div><strong>Phone</strong><br><span style="color:var(--muted);">+91 96591 18999 &middot; 0462 2555112 / 2555113</span></div>
+        <div><strong>Email</strong><br><span style="color:var(--muted);">reservation@sriramhotel.com</span></div>
+        <div><strong>Address</strong><br><span style="color:var(--muted);">498/2B2, Opposite New Bus Stand, Tirunelveli &ndash; 627007</span></div>
+      </div>
+
+      <a href="https://api.whatsapp.com/send?phone=919659118999" target="_blank" rel="noopener" class="btn btn-outline-dark" style="margin-top:28px;">Message on WhatsApp &rarr;</a>
+      <p style="font-size:13px; color:var(--muted); margin-top:24px;">Planning a wedding or function instead? Use the <a href="banquet.html#hall-enquiry" style="color:var(--temple-red); font-weight:600;">banquet hall enquiry form</a>.</p>
+    </div>
+
+    <div class="card-panel">
+      <h3 style="font-size:20px; margin-bottom:6px;">Send a room booking request</h3>
+      <p style="font-size:13px; color:var(--muted); margin-bottom:24px;">For check-in stays only. Banquet hall bookings are handled separately.</p>
+
+      <form onsubmit="handleDemoForm(event, 'Room booking request')">
+        <div class="row2">
+          <div class="field2"><label>Full name</label><input placeholder="Your name" required></div>
+          <div class="field2"><label>Phone number</label><input placeholder="+91" required></div>
+        </div>
+        <div class="row2">
+          <div class="field2"><label>Check-in</label><input type="date"></div>
+          <div class="field2"><label>Check-out</label><input type="date"></div>
+        </div>
+        <div class="row2">
+          <div class="field2"><label>Room type</label>
+            <select>
+              <option>Standard Room</option>
+              <option>Executive Room</option>
+              <option>Deluxe Twin Room</option>
+              <option>Family Suite</option>
+              <option>Heritage Suite</option>
+              <option>Single Occupancy Room</option>
+            </select>
+          </div>
+          <div class="field2"><label>Guests</label><input placeholder="2 adults, 0 children"></div>
+        </div>
+        <div class="field2"><label>Notes (optional)</label><textarea placeholder="Any special requests..."></textarea></div>
+        <button class="btn btn-primary btn-block" type="submit">Send room booking request</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="logo" style="color:var(--ivory);"><span class="mark">&#9670;</span> Hotel Sriram</div>
+        <p>498/2B2, Opposite New Bus Stand, Tirunelveli &ndash; 627007, Tamil Nadu.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="rooms.html">Rooms &amp; Suites</a></li>
+          <li><a href="banquet.html">Banquet Halls</a></li>
+          <li><a href="about.html">About the hotel</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>+91 96591 18999</li>
+          <li>0462 2555112 / 2555113</li>
+          <li>reservation@sriramhotel.com</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Find us</h4>
+        <p>Opposite New Bus Stand &middot; 4&nbsp;km from Tirunelveli Junction &middot; 40&nbsp;km from Tuticorin Airport.</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Hotel Sriram, Tirunelveli. All rights reserved.</span>
+      <span>Design concept &middot; not the live site</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

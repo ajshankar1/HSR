@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Hotel Sriram</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="index.html" class="logo"><span class="mark">&#9670;</span> Hotel Sriram</a>
+    <nav class="navlinks">
+      <a href="index.html" data-nav>Home</a>
+      <a href="rooms.html" data-nav>Rooms</a>
+      <a href="banquet.html" data-nav>Banquet Halls</a>
+      <a href="gallery.html" data-nav>Gallery</a>
+      <a href="about.html" data-nav>About</a>
+      <a href="contact.html" data-nav>Contact</a>
+      <div class="cta-dropdown" onclick="toggleCtaMenu(event)">
+        <span class="cta">Book now &#9662;</span>
+        <div class="cta-menu">
+          <a href="contact.html#room-request"><span class="m-name">Book a room</span><span class="m-sub">Standard, executive, deluxe or suite</span></a>
+          <a href="banquet.html#hall-enquiry"><span class="m-name">Book banquet hall</span><span class="m-sub">Check a date and get a cost estimate</span></a>
+        </div>
+      </div>
+    </nav>
+    <button class="navtoggle" onclick="toggleNav()">&#9776;</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a> / About</div>
+    <h1>About Hotel Sriram</h1>
+    <p>Four and a half decades of hospitality at the heart of Tirunelveli.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap" style="display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center;">
+    <div>
+      <span class="eyebrow">Our story</span>
+      <h2 style="font-size:32px; margin-bottom:18px;">Built on the trust of returning guests since 1977</h2>
+      <p style="color:var(--muted); margin-bottom:16px;">Hotel Sriram was founded by Sri Umasankar in 1977, opposite what was then a smaller bus terminus on the edge of Tirunelveli. Over the decades the hotel grew alongside the city, adding rooms, an in-house restaurant, and later the Vivahaa and Aishwaryam event halls.</p>
+      <p style="color:var(--muted); margin-bottom:16px;">Today the hotel is still family-run, with many staff who have worked here for over a decade. Guests range from pilgrims visiting the region's temples to wedding parties and business travellers passing through the junction.</p>
+      <p style="color:var(--muted);">The same principle has carried the hotel since day one: a clean, comfortable room and a genuinely warm welcome, at a fair price.</p>
+    </div>
+    <div style="aspect-ratio:4/5; border-radius:4px; background:linear-gradient(160deg, var(--night), var(--night-2));"></div>
+  </div>
+</section>
+
+<section class="facilities">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">By the numbers</span>
+      <h2>Hotel Sriram at a glance</h2>
+    </div>
+    <div class="fac-grid">
+      <div class="fac-item"><div class="icon">47</div><h4>Years open</h4><p>Serving Tirunelveli since 1977.</p></div>
+      <div class="fac-item"><div class="icon">40+</div><h4>Rooms</h4><p>Across six room categories.</p></div>
+      <div class="fac-item"><div class="icon">2</div><h4>Event halls</h4><p>Vivahaa and Aishwaryam.</p></div>
+      <div class="fac-item"><div class="icon">4.2</div><h4>Guest rating</h4><p>Average across Google &amp; TripAdvisor.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Location</span>
+      <h2>Easy to find, easy to reach</h2>
+      <p>Right opposite the New Bus Stand, a short ride from the railway junction.</p>
+    </div>
+    <div style="aspect-ratio: 16/6; border-radius:4px; background: var(--ivory-2); display:flex; align-items:center; justify-content:center; color:var(--muted); font-size:14px; border:1px solid #ddd2b8;">
+      Map embed goes here once the live site is built
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="logo" style="color:var(--ivory);"><span class="mark">&#9670;</span> Hotel Sriram</div>
+        <p>498/2B2, Opposite New Bus Stand, Tirunelveli &ndash; 627007, Tamil Nadu.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="rooms.html">Rooms &amp; Suites</a></li>
+          <li><a href="banquet.html">Banquet Halls</a></li>
+          <li><a href="about.html">About the hotel</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>+91 96591 18999</li>
+          <li>0462 2555112 / 2555113</li>
+          <li>reservation@sriramhotel.com</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Find us</h4>
+        <p>Opposite New Bus Stand &middot; 4&nbsp;km from Tirunelveli Junction &middot; 40&nbsp;km from Tuticorin Airport.</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Hotel Sriram, Tirunelveli. All rights reserved.</span>
+      <span>Design concept &middot; not the live site</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

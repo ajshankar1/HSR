@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rooms &amp; Suites — Hotel Sriram</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="index.html" class="logo"><span class="mark">&#9670;</span> Hotel Sriram</a>
+    <nav class="navlinks">
+      <a href="index.html" data-nav>Home</a>
+      <a href="rooms.html" data-nav>Rooms</a>
+      <a href="banquet.html" data-nav>Banquet Halls</a>
+      <a href="gallery.html" data-nav>Gallery</a>
+      <a href="about.html" data-nav>About</a>
+      <a href="contact.html" data-nav>Contact</a>
+      <div class="cta-dropdown" onclick="toggleCtaMenu(event)">
+        <span class="cta">Book now &#9662;</span>
+        <div class="cta-menu">
+          <a href="contact.html#room-request"><span class="m-name">Book a room</span><span class="m-sub">Standard, executive, deluxe or suite</span></a>
+          <a href="banquet.html#hall-enquiry"><span class="m-name">Book banquet hall</span><span class="m-sub">Check a date and get a cost estimate</span></a>
+        </div>
+      </div>
+    </nav>
+    <button class="navtoggle" onclick="toggleNav()">&#9776;</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Rooms &amp; Suites</div>
+    <h1>Rooms &amp; suites</h1>
+    <p>Every room is air-conditioned with attached bath, daily housekeeping and complimentary Wi-Fi. Pick what fits your stay.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="rooms-grid">
+      <div class="room-card">
+        <div class="room-img"><span class="tag">Standard &middot; sleeps 2</span></div>
+        <div class="room-body">
+          <h3>Standard Room</h3>
+          <div class="price">&#8377;1,800 <span>/ night</span></div>
+          <p>Practical AC room for short pilgrimage stays, steps from the bus stand.</p>
+          <ul>
+            <li>1 double or 2 twin beds</li>
+            <li>Attached bathroom, hot water</li>
+            <li>TV, Wi-Fi, room service</li>
+          </ul>
+          <a class="link" href="contact.html#room-request">Request this room &rarr;</a>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="room-img"><span class="tag">Executive &middot; sleeps 2&ndash;3</span></div>
+        <div class="room-body">
+          <h3>Executive Room</h3>
+          <div class="price">&#8377;2,600 <span>/ night</span></div>
+          <p>Larger room with a work desk and seating area, suited to business stays.</p>
+          <ul>
+            <li>King bed + sofa seating</li>
+            <li>Work desk, mini fridge</li>
+            <li>Premium toiletries</li>
+          </ul>
+          <a class="link" href="contact.html#room-request">Request this room &rarr;</a>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="room-img"><span class="tag">Family Suite &middot; sleeps 4</span></div>
+        <div class="room-body">
+          <h3>Family Suite</h3>
+          <div class="price">&#8377;3,400 <span>/ night</span></div>
+          <p>Connecting layout for families travelling together for weddings or temple visits.</p>
+          <ul>
+            <li>Two connecting rooms</li>
+            <li>Extra bedding on request</li>
+            <li>Dedicated family check-in</li>
+          </ul>
+          <a class="link" href="contact.html#room-request">Request this room &rarr;</a>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="room-img"><span class="tag">Deluxe Twin &middot; sleeps 2</span></div>
+        <div class="room-body">
+          <h3>Deluxe Twin Room</h3>
+          <div class="price">&#8377;2,200 <span>/ night</span></div>
+          <p>Quiet upper-floor rooms with a city-facing balcony.</p>
+          <ul>
+            <li>Twin beds, balcony</li>
+            <li>Reading nook</li>
+            <li>Blackout curtains</li>
+          </ul>
+          <a class="link" href="contact.html#room-request">Request this room &rarr;</a>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="room-img"><span class="tag">Single &middot; sleeps 1</span></div>
+        <div class="room-body">
+          <h3>Single Occupancy Room</h3>
+          <div class="price">&#8377;1,400 <span>/ night</span></div>
+          <p>Budget-friendly room for solo business or transit travellers.</p>
+          <ul>
+            <li>Single bed, compact desk</li>
+            <li>Attached bathroom</li>
+            <li>Quick self check-in</li>
+          </ul>
+          <a class="link" href="contact.html#room-request">Request this room &rarr;</a>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="room-img"><span class="tag">Heritage Suite &middot; sleeps 3</span></div>
+        <div class="room-body">
+          <h3>Heritage Suite</h3>
+          <div class="price">&#8377;4,200 <span>/ night</span></div>
+          <p>The hotel's largest room, with a separate sitting area.</p>
+          <ul>
+            <li>Separate living area</li>
+            <li>Premium linen &amp; furnishing</li>
+            <li>Priority restaurant seating</li>
+          </ul>
+          <a class="link" href="contact.html#room-request">Request this room &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="logo" style="color:var(--ivory);"><span class="mark">&#9670;</span> Hotel Sriram</div>
+        <p>498/2B2, Opposite New Bus Stand, Tirunelveli &ndash; 627007, Tamil Nadu.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="rooms.html">Rooms &amp; Suites</a></li>
+          <li><a href="banquet.html">Banquet Halls</a></li>
+          <li><a href="about.html">About the hotel</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>+91 96591 18999</li>
+          <li>0462 2555112 / 2555113</li>
+          <li>reservation@sriramhotel.com</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Find us</h4>
+        <p>Opposite New Bus Stand &middot; 4&nbsp;km from Tirunelveli Junction &middot; 40&nbsp;km from Tuticorin Airport.</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Hotel Sriram, Tirunelveli. All rights reserved.</span>
+      <span>Design concept &middot; not the live site</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
